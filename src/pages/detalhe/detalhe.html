@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Rota-Segura</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-card>
+      <ion-card-header>
+      <ion-icon name="md-clipboard"></ion-icon>  
+          Detalhes do usuário!
+      </ion-card-header>
+      <ion-icon color="primary" name="md-contact" item-left>  Nome: </ion-icon>
+      <ion-title>          
+          {{ items.name }}
+      </ion-title>
+      <ion-icon color="primary" name="md-calendar" item-left>  Data da entrega: </ion-icon>
+      <ion-title>
+          {{ items.dt_entrega }}
+      </ion-title>
+      <ion-icon color="primary" name="md-bicycle" item-left>  Partida: </ion-icon>
+      <ion-title>
+          {{ items.p_partida }}
+      </ion-title>
+      <ion-icon color="primary" name="md-flag" item-left>  Destino: </ion-icon>
+      <ion-title>
+          {{ items.destino }}
+      </ion-title>
+  </ion-card>
+</ion-content>
