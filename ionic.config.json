@@ -1,0 +1,7 @@
+{
+  "name": "Rota-Segura",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
