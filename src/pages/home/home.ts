@@ -25,5 +25,9 @@ export class HomePage {
   openDetails(item) {
     this.navCtrl.push('DetalhePage', {item: item});
   }
+
+  openCreateAccount() {
+    this.navCtrl.push('CadastroPage');
+  }
   
 }

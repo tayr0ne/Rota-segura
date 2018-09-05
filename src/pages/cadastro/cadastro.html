@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Rota-segura
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+ 
+  <h1 text-center>Cadastro de rotas</h1>
+ 
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" name="name" [(ngModel)]="model.name"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label stacked>Data entrega</ion-label>
+      <ion-input type="text" name="dt_entrega" [(ngModel)]="model.dt_entrega"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>ponto partida</ion-label>
+      <ion-input type="text" name="p_partida" [(ngModel)]="model.p_partida"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label stacked>destino</ion-label>
+      <ion-input type="text" name="destino" [(ngModel)]="model.destino"></ion-input>
+    </ion-item>
+  </ion-list>
+ 
+ 
+  <button ion-button block (click)="createAccount()" color="primary">Criar conta</button>
+ 
+</ion-content>
