@@ -18,7 +18,7 @@ export class HomePage {
     let data:Observable<any>;
     data = this.HttpClient.get('https://laravel-web-service.herokuapp.com/api/user');
     data.subscribe(result =>{
-      this.items =result;
+      this.items = result;
     });  
   }
 
@@ -29,5 +29,15 @@ export class HomePage {
   openCreateAccount() {
     this.navCtrl.push('CadastroPage');
   }
+
+  doRefresh(refresher) {
+    let data:Observable<any>;
+    data = this.HttpClient.get('https://laravel-web-service.herokuapp.com/api/user');
+    data.subscribe(result =>{
+      this.items = result;
+    });  
+    refresher.complete();
+  }
   
 }
+

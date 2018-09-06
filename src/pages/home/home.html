@@ -8,6 +8,10 @@
 
 <ion-content padding>
 
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
 <ion-card>
   <ion-card-header>
        Rotas Salvas
@@ -18,7 +22,7 @@
        {{ item.name }}
       </ion-card-header>
     </button>
-    <button ion-button block (click)="openCreateAccount()">Criar conta</button>
+    <button ion-button block (click)="openCreateAccount()">Cadastrar Rota</button>
   </ion-list>
 </ion-card>
 
